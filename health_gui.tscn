@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvr4vxdcrxjvo"]
+
+[ext_resource type="Script" path="res://scripts/health_gui.gd" id="1_s8cw7"]
+[ext_resource type="Texture2D" uid="uid://vbdn1qybkc5j" path="res://other sprites/healthbar.png" id="1_tbmjl"]
+
+[node name="HealthGUI" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(37, 8)
+offset_right = 37.0
+offset_bottom = 8.0
+script = ExtResource("1_s8cw7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_tbmjl")
+centered = false
+hframes = 11

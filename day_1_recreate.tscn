@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6w6hhw6viyde"]
+
+[ext_resource type="Texture2D" uid="uid://cgg4jitllwbbw" path="res://other sprites/icon.svg" id="1_cnb78"]
+[ext_resource type="PackedScene" uid="uid://cx1b2vyiu5wc4" path="res://scripts/Zero.tscn" id="2_cmvrv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdxjm"]
+
+[node name="Day1recreate" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(518, 565)
+scale = Vector2(14.2, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("1_cnb78")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+scale = Vector2(6.4, 6.32)
+shape = SubResource("RectangleShape2D_rdxjm")
+
+[node name="Zero" parent="." instance=ExtResource("2_cmvrv")]
+position = Vector2(281, 416)
+scale = Vector2(3, 3)

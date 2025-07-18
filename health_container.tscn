@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgddvq2fe6355"]
+
+[ext_resource type="PackedScene" uid="uid://bvr4vxdcrxjvo" path="res://scripts/health_gui.tscn" id="1_eskmw"]
+[ext_resource type="Script" path="res://scripts/health_container.gd" id="1_fxkip"]
+
+[node name="HealthContainer" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fxkip")
+
+[node name="HealthGUI" parent="." instance=ExtResource("1_eskmw")]
+texture_filter = 1
+layout_mode = 2
